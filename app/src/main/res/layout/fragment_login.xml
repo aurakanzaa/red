@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.LoginFragment"
+    android:paddingBottom="16dp"
+    android:paddingTop="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:background="#FFF">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:id="@+id/login_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/email_login_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/judul"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SELAMAT DATANG DI SIMA MOBILE APPS"
+                android:fontFamily="sans-serif"
+                android:textStyle="bold"
+                android:textSize="30dp"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/colorPrimary"/>
+
+            <TextView
+                android:id="@+id/login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LOGIN"
+                android:fontFamily="sans-serif"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/colorPrimary"/>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <AutoCompleteTextView
+                    android:id="@+id/editTextUsername"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Username"
+                    android:imeActionId="6"
+                    android:imeActionLabel="LOGIN"
+                    android:imeOptions="actionUnspecified"
+                    android:maxLines="1"
+                    android:singleLine="true" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <EditText
+                    android:id="@+id/editTextPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Password"
+                    android:imeActionId="6"
+                    android:imeActionLabel="LOGIN"
+                    android:imeOptions="actionUnspecified"
+                    android:maxLines="1"
+                    android:inputType="textPassword"
+                    android:singleLine="true" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/buttonLogin"
+                style="?android:textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="70px"
+                android:layout_marginTop="16dp"
+                android:text="LOGIN"
+                android:textSize="15dp"
+                android:background="@color/colorPrimary"
+                android:textStyle="bold"
+                android:textColor="#FFF"/>
+
+            <Button
+                android:id="@+id/buttonRegister"
+                style="?android:textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="70px"
+                android:layout_marginTop="16dp"
+                android:text="REGISTER"
+                android:textSize="15dp"
+                android:background="#FFF"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

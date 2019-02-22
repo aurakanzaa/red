@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.AboutFragment"
+    android:background="@drawable/pattern">
+
+    <!-- TODO: Update blank fragment layout -->
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/lab_sima"
+                android:scaleType="centerCrop"
+                />
+            <TextView
+                android:id="@+id/judul"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:text="Laboratorium SIMA"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textColor="#000"
+                android:layout_below="@+id/image"/>
+
+            <com.uncopt.android.widget.text.justify.JustifiedTextView
+                android:id="@+id/deskripsi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="8dp"
+                android:text="Laboratorium Klinik SIMA mempunyai komitmen untuk mewujudkan kesempurnaan dalam pelayanan dan hasil diagnosis yang berkualitas tinggi serta selalu berinovasi dalam memenuhi kepuasan dan kepecayaan pelanggan"
+                android:layout_below="@+id/judul"/>
+
+            <TextView
+                android:id="@+id/sejarah"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:text="SEJARAH"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_below="@+id/deskripsi"
+                android:textColor="#000"/>
+
+            <com.uncopt.android.widget.text.justify.JustifiedTextView
+                android:id="@+id/sejarah_desk"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Berbekal semangat idealisme dan tujuan mulia untuk dapat menyumbangkan karya terbaik dalam bidang layanan jasa kesehatan khususnya jasa laboratorium, maka didirikan Laboratorium Medis Citra di jalan Tangkuban Perahu 33 pada tahun 1987, sebagai cikal bakal Laboratorium Klinik SIMA. Dengan semakin berkembangnya Laboratorium tersebut, maka pada bulan Juli tahun 1997, Laboratorium Medis Citra berkembang menjadi Laboratorium Klinik “SIMA” yang pertama, dengan lokasi di jalan Tangkuban Perahu No. 14 Malang.
+
+Kehadirannya di tengah masyarakat Malang mendapat sambutan yang luar biasa, baik dari kalangan masyarakat sebagai pengguna jasa layanan laboratorium ataupun dari dokter sebagai mitra kerja. Dukungan, antusiasme dan kepercayaan masyarakat Malang dan sekitarnya menambah semangat serta tekad para perintis untuk tidak menyia-nyiakan kepercayaan tersebut.
+
+Hal ini diwujudkan dengan usaha keras para pendiri untuk berusaha membangun Laboratorium Klinik “SIMA” menjadi yang terdepan dalam kualitas diagnosis dan pelayanan. Kerja keras, komitmen dan dedikasi untuk memberikan kualitas dan layanan yang lebih baik telah membuahkan hasil dengan dibukanya cabang di kota Kediri tahun 2005 dan di Jalan Ciliwung Malang pada tahun 2014, serta akan dibuka beberapa cabang lagi di berbagai kota besar lainnya."
+                android:scrollbars="vertical"
+                android:layout_below="@id/sejarah"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="8dp"/>
+
+            <TextView
+                android:id="@+id/visi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:text="VISI"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_below="@+id/sejarah_desk"
+                android:textColor="#000"/>
+
+            <TextView
+                android:id="@+id/visi_desk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="8dp"
+                android:text="Menjadi laboratorium klinik yang terdepan dalam kualitas dan pelayanan"
+                android:layout_below="@+id/visi" />
+
+            <TextView
+                android:id="@+id/misi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:text="MISI"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_below="@+id/visi_desk"
+                android:textColor="#000"/>
+
+            <TextView
+                android:id="@+id/misi_desk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="8dp"
+                android:text="Meningkaykan kualitas sumber daya manusia"
+                android:layout_below="@+id/misi" />
+
+            <TextView
+                android:id="@+id/misi_desk2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="8dp"
+                android:text="Memberikan pelayanan yang prima kepada pelanggan"
+                android:layout_below="@+id/misi_desk" />
+
+            <TextView
+                android:id="@+id/misi_desk3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="8dp"
+                android:text="Menjalankan sistem mutu secara konsisten"
+                android:layout_below="@+id/misi_desk2" />
+
+            <TextView
+                android:id="@+id/misi_desk4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="8dp"
+                android:text="Mengedepankan teknologi dan informasi di bidang jasa laboratorium klinik"
+                android:layout_below="@+id/misi_desk3" />
+
+            <TextView
+                android:id="@+id/misi_desk5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="8dp"
+                android:text="Meningkatkan taraf kesejahteraan karyawan beserta keluarga"
+                android:layout_below="@+id/misi_desk4" />
+
+            <TextView
+                android:id="@+id/motto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:text="MOTTO"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_below="@+id/misi_desk5"
+                android:textColor="#000"/>
+
+            <TextView
+                android:id="@+id/motto_desk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="8dp"
+                android:text="Melayani Tetal di Hati"
+                android:layout_below="@+id/motto" />
+
+            <Button
+                android:id="@+id/btnContact"
+                android:layout_below="@+id/motto_desk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Contact Us"
+                android:layout_marginTop="20dp"
+                android:background="#53b63f"
+                android:textColor="#FFF"
+                android:layout_alignParentBottom="true"
+                />
+        </RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</FrameLayout>

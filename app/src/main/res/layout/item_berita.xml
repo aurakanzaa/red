@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingVertical="5dp">
+    <ImageView
+        android:id="@+id/ivPosterBerita"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginHorizontal="10dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ic_launcher"/>
+
+    <TextView
+        android:id="@+id/tvIsiBerita"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:textSize="15sp"
+        android:layout_toRightOf="@+id/ivPosterBerita"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:textColor="@android:color/black"
+        android:text="Isi Berita"
+        android:maxLines="5"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ivPosterBerita">
+        <TextView
+            android:id="@+id/tvJudulBerita"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:paddingBottom="3dp"
+            android:paddingTop="3dp"
+            android:layout_marginLeft="8dp"
+            android:paddingLeft="8dp"
+            android:layout_marginTop="5dp"
+            android:textColor="#FFF"
+            android:text="Judul Artikel Berita"
+            android:maxLines="1"
+            android:layout_marginRight="8dp"
+            android:background="#53b63f"/>
+    </RelativeLayout>
+</RelativeLayout>

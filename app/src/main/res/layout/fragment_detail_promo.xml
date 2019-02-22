@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.DetailPromoFragment"
+    android:background="@drawable/pattern">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/ivGambarPromo"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@mipmap/ic_launcher"
+                android:scaleType="centerCrop"/>
+
+            <RelativeLayout
+                android:id="@+id/judul"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:orientation="horizontal"
+                android:layout_below="@+id/ivGambarPromo">
+                <TextView
+                    android:id="@+id/tvJudul"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Judul Promo"
+                    android:textColor="#000"
+                    android:textSize="20dp"
+                    />
+                <TextView
+                    android:id="@+id/tvTglMulai"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Senin, 12 Maret 2018"
+                    android:layout_below="@+id/tvJudul"/>
+
+                <TextView
+                    android:id="@+id/tvTglSelesai"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Oleh : Rizal Hilman"
+                    android:layout_below="@+id/tvTglMulai"
+                    />
+            </RelativeLayout>
+            <WebView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/wvKontenPromo"
+                android:layout_below="@+id/judul"></WebView>
+            <RelativeLayout
+                android:id="@+id/button"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/wvKontenPromo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+                <Button
+                    android:id="@+id/btnPesan"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="Pesan Sekarang"
+                    android:background="#53b63f"
+                    android:textColor="#FFF"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    />
+                <Button
+                    android:id="@+id/btnHubungi"
+                    android:layout_width="120dp"
+                    android:background="#53b63f"
+                    android:layout_height="wrap_content"
+                    android:text="Hubungi Kami"
+                    android:textColor="#FFF"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    />
+            </RelativeLayout>
+        </RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</FrameLayout>

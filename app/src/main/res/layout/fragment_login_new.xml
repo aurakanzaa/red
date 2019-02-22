@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pattern"
+    tools:context=".Fragment.LoginNewFragment">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="137dp"
+        android:layout_height="124dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:src="@drawable/logosima" />
+
+    <TextView
+        android:id="@+id/judul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="152dp"
+        android:layout_marginLeft="30dp"
+        android:text="Selamat datang di"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/judul2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="190dp"
+        android:layout_marginLeft="30dp"
+        android:text="SIMA Mobile Apps"
+        android:textSize="20sp" />
+
+
+    <Button
+        android:id="@+id/buttonGoogle"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="121dp"
+        android:background="@drawable/custom_button"
+        android:drawableLeft="@drawable/search"
+        android:paddingLeft="18dp"
+        android:paddingRight="18dp"
+        android:text="   Continue with Google"
+        android:textSize="12sp" />
+
+    <!--<Button-->
+    <!--android:id="@+id/buttonEmail"-->
+    <!--android:layout_width="220dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:layout_marginBottom="92dp"-->
+    <!--android:background="@drawable/custom_button"-->
+    <!--android:drawableLeft="@drawable/search"-->
+    <!--android:paddingLeft="18dp"-->
+    <!--android:paddingRight="18dp"-->
+    <!--android:text="   Continue with Email"-->
+    <!--android:textColor="@color/grey"-->
+    <!--android:textSize="11sp" />-->
+
+    <TextView
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="84dp"
+        android:text="Atau"
+        android:textSize="11sp" />
+
+    <Button
+        android:id="@+id/buttonRegister"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/btn_green"
+        android:text="REGISTER"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+</RelativeLayout>

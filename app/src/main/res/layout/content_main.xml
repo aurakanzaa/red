@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            tools:context=".MainActivity"
+            tools:showIn="@layout/app_bar_main">
+
+            <!--<ScrollView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent">-->
+            <RelativeLayout
+                android:id="@+id/layoutPromo"
+                android:layout_width="match_parent"
+                android:layout_height="90dp">
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/viewPager"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+                <android.support.design.widget.TabLayout
+                    android:id="@+id/indicator"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    app:tabBackground="@drawable/tab_selector"
+                    app:tabGravity="center"
+                    app:tabIndicatorHeight="0dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layoutBerita"
+                android:layout_width="match_parent"
+                android:layout_height="310dp"
+                android:layout_below="@+id/layoutPromo"
+                android:background="@drawable/pattern">
+
+                <TextView
+                    android:id="@+id/tvJudulBerita"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:paddingBottom="3dp"
+                    android:paddingTop="3dp"
+                    android:layout_marginLeft="10dp"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    android:layout_marginTop="8dp"
+                    android:text="BERITA"/>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rvListBerita"
+                    android:layout_below="@id/tvJudulBerita"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </android.support.v7.widget.RecyclerView>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layoutMenu"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/layoutBerita"
+                android:background="@drawable/biru"
+                android:layout_marginTop="10dp">
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TableRow
+                        android:gravity="center"
+                        android:layout_marginTop="3dp">
+                        <Button
+                            android:id="@+id/buttonRegistrasi"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:textColor="#FFF"
+                            android:background="@drawable/booking"/>
+
+                        <Button
+                            android:id="@+id/buttonProfil"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/profil"
+                            android:textColor="#FFF"/>
+
+                        <Button
+                            android:id="@+id/buttonRekamMedik"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/rekammedik"
+                            android:textColor="#FFF"/>
+
+                        <Button
+                            android:id="@+id/buttonHasil"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/hasil"
+                            android:textColor="#FFF"/>
+                    </TableRow>
+
+                    <TableRow
+                        android:gravity="center"
+                        android:layout_marginTop="3dp">
+                        <Button
+                            android:id="@+id/buttonFasilitas"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_below="@+id/buttonRegistrasi"
+                            android:background="@drawable/fasilitas"
+                            android:textColor="#FFF"
+                            />
+
+                        <Button
+                            android:id="@+id/buttonGaleri"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/galeri"
+                            android:textColor="#FFF"
+                            />
+
+                        <Button
+                            android:id="@+id/buttonHomeService"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/homeservice"
+                            android:textColor="#FFF"
+                            />
+
+                        <Button
+                            android:id="@+id/buttonHubungi"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/hubungikami"
+                            android:textColor="#FFF"
+                            />
+                    </TableRow>
+
+                </TableLayout>
+
+            </RelativeLayout>
+            <!--</ScrollView>-->
+
+        </RelativeLayout>
+    </FrameLayout>
+
+</android.support.constraint.ConstraintLayout>

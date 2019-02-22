@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_login"
+            android:title="Login" />
+        <item
+            android:id="@+id/nav_about"
+            android:title="About" />
+        <item
+            android:id="@+id/nav_contact"
+            android:title="Contact" />
+        <item
+            android:id="@+id/nav_galeri"
+            android:title="Galeri" />
+        <item
+            android:id="@+id/nav_fasilitas"
+            android:title="Fasilitas" />
+        <item
+            android:id="@+id/nav_pricelist"
+            android:title="Pricelist" />
+
+        <item
+            android:id="@+id/nav_promo"
+            android:title="Promo" />
+        <item
+            android:id="@+id/nav_logout"
+            android:title="Logout" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_booking"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Booking Dokter" />
+            <item
+                android:id="@+id/nav_ktp"
+                android:icon="@drawable/ic_menu_share"
+                android:title="KTP" />
+            <item
+                android:id="@+id/nav_login_new"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Login" />
+            <item
+                android:id="@+id/nav_regis_new"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Register" />
+            <item
+                android:id="@+id/nav_dokter"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Nama Dokter" />
+        </menu>
+    </item>
+
+</menu>
